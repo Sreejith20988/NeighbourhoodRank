@@ -40,7 +40,7 @@
         public string ZipCode { get; set; }
 
         [JsonProperty("record_id")]
-        public string RecordId { get; set; }
+        public int VehicleCount { get; set; }
 
         [JsonProperty("vehicle_make", NullValueHandling = NullValueHandling.Ignore)]
         public string VehicleMake { get; set; }
