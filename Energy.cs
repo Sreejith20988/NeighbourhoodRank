@@ -12,8 +12,7 @@
     public partial class Energy
     {
         [JsonProperty("data_year")]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public Int64 DataYear { get; set; }
+        public string DataYear { get; set; }
 
         [JsonProperty("id")]
         [JsonConverter(typeof(ParseStringConverter))]
@@ -35,24 +34,19 @@
         public string PrimaryPropertyType { get; set; }
 
         [JsonProperty("gross_floor_area_buildings_sq_ft")]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long GrossFloorAreaBuildingsSqFt { get; set; }
+        public string GrossFloorAreaBuildingsSqFt { get; set; }
 
         [JsonProperty("year_built")]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public Int64 YearBuilt { get; set; }
+        public string YearBuilt { get; set; }
 
         [JsonProperty("of_buildings")]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long OfBuildings { get; set; }
+        public string OfBuildings { get; set; }
 
         [JsonProperty("electricity_use_kbtu")]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long ElectricityUseKbtu { get; set; }
+        public string ElectricityUseKbtu { get; set; }
 
         [JsonProperty("natural_gas_use_kbtu", NullValueHandling = NullValueHandling.Ignore)]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long? NaturalGasUseKbtu { get; set; }
+        public string NaturalGasUseKbtu { get; set; }
 
         [JsonProperty("site_eui_kbtu_sq_ft")]
         public string SiteEuiKbtuSqFt { get; set; }
