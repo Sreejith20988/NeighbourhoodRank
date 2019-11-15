@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="NeighbourhoodRank" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\Sreejith\ Nair\\Google\ Drive\\UC\\Course\\XML\ &amp;\ Web\ Services\\Project\\NeighbourhoodRank\\NeighbourhoodRank\\obj\\Release\\netcoreapp2\.2\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>
