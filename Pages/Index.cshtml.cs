@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using QuickType;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Schema;
+using NeighbourhoodRank;
 
 namespace NeighbourhoodRank.Pages
 {
@@ -23,20 +24,28 @@ namespace NeighbourhoodRank.Pages
                 string jsonstring = WebClient.DownloadString("https://data.cityofchicago.org/resource/xq83-jr8c.json");
                 QuickType.Energy[] energies = QuickType.Energy.FromJson(jsonstring);
                 ViewData["Energy"] = energies;
-                List<string> ZipCode = new List<string>();
-                decimal cons;
 
                 jsonstring = WebClient.DownloadString("https://data.cityofchicago.org/resource/tfm3-3j95.json");
                 QuickTypeVehicle.Vehicle[] vehicles = QuickTypeVehicle.Vehicle.FromJson(jsonstring);
                 ViewData["Vehicle"] = vehicles;
 
-                foreach(QuickType.Energy energy in energies)
+
+                List<string> ZipCode1 = new List<string>();
+                List<string> ZipCode2 = new List<string>();
+
+                foreach (QuickType.Energy energy in energies)
                 {
                    
-                    ZipCode.Add(energy.ZipCode);
-/*                    cons = Decimal.Parse(energy.ElectricityUseKbtu);
-*/ 
+                    ZipCode1.Add(energy.ZipCode);
+                    ZipCode2.Add(energy.ZipCode);
+
                 }
+
+
+                ViewData["Vehicle"] = vehicles;
+
+
+
             }
 
         }
