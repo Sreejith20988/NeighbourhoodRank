@@ -39,7 +39,6 @@
         [JsonProperty("zip_code")]
         public string ZipCode { get; set; }
 
-        [JsonProperty("record_id")]
         public int VehicleCount { get; set; }
 
         [JsonProperty("vehicle_make", NullValueHandling = NullValueHandling.Ignore)]
@@ -49,8 +48,7 @@
         public string VehicleModel { get; set; }
 
         [JsonProperty("vehicle_model_year", NullValueHandling = NullValueHandling.Ignore)]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public long? VehicleModelYear { get; set; }
+        public string VehicleModelYear { get; set; }
 
         [JsonProperty("vehicle_color", NullValueHandling = NullValueHandling.Ignore)]
         public string VehicleColor { get; set; }
