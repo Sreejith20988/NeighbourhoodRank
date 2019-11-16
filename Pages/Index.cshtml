@@ -1,12 +1,10 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
-    var energy_cons = (QuickType.Energy[]) ViewData["Energy"];
+
 }
 
-@foreach(var item in energy_cons) {
-    <tr>
-        <td>@item.ZipCode</td>
-    </tr>
+@foreach(var item in ViewData["affluence"] as IEnumerable<Affluence>)
+{
+    <p>@item</p>
 }

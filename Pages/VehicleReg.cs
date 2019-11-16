@@ -55,6 +55,8 @@
 
         [JsonProperty("taxi_affiliation", NullValueHandling = NullValueHandling.Ignore)]
         public string TaxiAffiliation { get; set; }
+        [JsonProperty("record_id")]
+        public string RecordId { get; set; }
     }
 
     public partial class Vehicle
