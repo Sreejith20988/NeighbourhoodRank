@@ -5,10 +5,26 @@
 
     List<NeighbourhoodRank.Affluence> affluences = (List<NeighbourhoodRank.Affluence>)ViewData["affluence"];
 }
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <table>
+        <tr>
+            <th>Zip Code</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Power Usage</th>
+            <th>Vehicle Count</th>
+        </tr>
 
-@foreach(NeighbourhoodRank.Affluence affluence in affluences)
-{
-    <tr>
-        <td>@affluence.Zip</td>
-    </tr>
-}
+        @foreach (NeighbourhoodRank.Affluence affluence in affluences)
+        {
+            <tr>
+                <td>@affluence.Zip</td>
+                <td>@affluence.Latitude</td>
+                <td>@affluence.Longitude</td>
+                <td>@affluence.PowerUsage</td>
+                <td>@affluence.VehicleCount</td>
+            </tr>
+        }
+    </table>
+</div>
