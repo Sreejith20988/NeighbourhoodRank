@@ -1,12 +1,30 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
-    var energy_cons = (QuickType.Energy[]) ViewData["Energy"];
-}
+    ViewData["Title"] = "Home Page";
 
-@foreach(var item in energy_cons) {
-    <tr>
-        <td>@item.ZipCode</td>
-    </tr>
+    List<NeighbourhoodRank.Affluence> affluences = (List<NeighbourhoodRank.Affluence>)ViewData["affluence"];
 }
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <table>
+        <tr>
+            <th>Zip Code</th>
+            <th>Latitude</th>
+            <th>Longitude</th>
+            <th>Power Usage</th>
+            <th>Vehicle Count</th>
+        </tr>
+
+        @foreach (NeighbourhoodRank.Affluence affluence in affluences)
+        {
+            <tr>
+                <td>@affluence.Zip</td>
+                <td>@affluence.Latitude</td>
+                <td>@affluence.Longitude</td>
+                <td>@affluence.PowerUsage</td>
+                <td>@affluence.VehicleCount</td>
+            </tr>
+        }
+    </table>
+</div>

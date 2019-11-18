@@ -15,8 +15,8 @@
         public string DataYear { get; set; }
 
         [JsonProperty("id")]
-        [JsonConverter(typeof(ParseStringConverter))]
-        public Int64 Id { get; set; }
+
+        public Int32 Id { get; set; }
 
         [JsonProperty("property_name")]
         public string PropertyName { get; set; }
@@ -25,6 +25,7 @@
         public string Address { get; set; }
 
         [JsonProperty("zip_code")]
+        
         public string ZipCode { get; set; }
 
         [JsonProperty("community_area")]
@@ -34,7 +35,8 @@
         public string PrimaryPropertyType { get; set; }
 
         [JsonProperty("gross_floor_area_buildings_sq_ft")]
-        public string GrossFloorAreaBuildingsSqFt { get; set; }
+        [JsonConverter(typeof(ParseStringConverter))]
+        public decimal GrossFloorAreaBuildingsSqFt { get; set; }
 
         [JsonProperty("year_built")]
         public string YearBuilt { get; set; }
@@ -43,7 +45,8 @@
         public string OfBuildings { get; set; }
 
         [JsonProperty("electricity_use_kbtu")]
-        public string ElectricityUseKbtu { get; set; }
+        [JsonConverter(typeof(ParseStringConverter))]
+        public decimal ElectricityUseKbtu { get; set; }
 
         [JsonProperty("natural_gas_use_kbtu", NullValueHandling = NullValueHandling.Ignore)]
         public string NaturalGasUseKbtu { get; set; }
@@ -67,10 +70,12 @@
         public string GhgIntensityKgCo2ESqFt { get; set; }
 
         [JsonProperty("latitude")]
-        public string Latitude { get; set; }
+        [JsonConverter(typeof(ParseStringConverter))]
+        public decimal Latitude { get; set; }
 
         [JsonProperty("longitude")]
-        public string Longitude { get; set; }
+        [JsonConverter(typeof(ParseStringConverter))]
+        public decimal Longitude { get; set; }
 
         [JsonProperty("location")]
         public Location Location { get; set; }
@@ -117,13 +122,13 @@
         {
             if (reader.TokenType == JsonToken.Null) return null;
             var value = serializer.Deserialize<string>(reader);
-            long l;
-            if (Int64.TryParse(value, out l))
+            decimal l;
+            if (decimal.TryParse(value, out l))
             {
                 return l;
             }
 
-            throw new Exception("Cannot unmarshal type long");
+            return 0;
         }
 
         public override void WriteJson(JsonWriter writer, object untypedValue, JsonSerializer serializer)
