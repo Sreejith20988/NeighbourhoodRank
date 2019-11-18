@@ -15,17 +15,27 @@ namespace NeighbourhoodRank.Pages
 {
     public class IndexModel : PageModel
     {
+        public string GetData(string endpoint)
+        {
+            string downloadedData = "";
+            using (WebClient webClient = new WebClient())
+            {
+                downloadedData = webClient.DownloadString(endpoint);
+            }
+            return downloadedData;
+        }
+
         public void OnGet()
         {
             using (var WebClient = new WebClient())
             {
-                /*               IDictionary<long, QuickType.Energy> allEnergy = new Dictionary<long, QuickType.Energy>();
-                */
-
-                string jsonstring = WebClient.DownloadString("https://data.cityofchicago.org/resource/xq83-jr8c.json");
+                
+                string jsonstring = GetData("https://data.cityofchicago.org/resource/xq83-jr8c.json");
+ //               string jsonstring = WebClient.DownloadString("https://data.cityofchicago.org/resource/xq83-jr8c.json");
                 QuickType.Energy[] energies = QuickType.Energy.FromJson(jsonstring);
 
-                jsonstring = WebClient.DownloadString("https://data.cityofchicago.org/resource/tfm3-3j95.json");
+                jsonstring = GetData("https://data.cityofchicago.org/resource/tfm3-3j95.json");
+//                jsonstring = WebClient.DownloadString("https://data.cityofchicago.org/resource/tfm3-3j95.json");
                 QuickTypeVehicle.Vehicle[] vehicles = QuickTypeVehicle.Vehicle.FromJson(jsonstring);
 
                 List<Affluence> affluence = new List<Affluence>();
