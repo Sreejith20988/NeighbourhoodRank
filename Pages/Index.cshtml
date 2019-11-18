@@ -1,13 +1,12 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home Page";
 
     List<NeighbourhoodRank.Affluence> affluences = (List<NeighbourhoodRank.Affluence>)ViewData["affluence"];
 }
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
-    <table>
+    <table class="table">
         <tr>
             <th>Zip Code</th>
             <th>Latitude</th>
