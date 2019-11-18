@@ -44,19 +44,20 @@ namespace NeighbourhoodRank.Pages
                                 Longitude = energy.Longitude
                             };
 
-                Affluence target = new Affluence();
+                List<Affluence> target = new List<Affluence>();
 
                 foreach(var item in query)
                 {
-                    target.Zip = item.Zip;
-                    target.Record = item.Record;
-                    target.FloorSize = item.FloorSize;
-                    target.PowerUsage = item.PowerUsage;
-                    target.TotalUsage = item.TotalUsage;
-                    target.Latitude = item.Latitude;
-                    target.Longitude = item.Longitude;
 
-                    affluence.Add(target);
+
+                    affluence.Add(new Affluence
+                    { Zip = item.Zip,
+                        Record = item.Record,
+                        FloorSize = item.FloorSize,
+                        TotalUsage = item.TotalUsage,
+                        PowerUsage = item.PowerUsage,
+                        Latitude = item.Latitude,
+                        Longitude = item.Longitude });
                 }
                 ViewData["affluence"] = affluence;
                 }
