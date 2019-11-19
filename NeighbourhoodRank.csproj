@@ -5,6 +5,16 @@
     <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Content Remove="Energy_Consumption_Schema.json" />
+    <Content Remove="Vehicle_Register_Schema.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Energy_Consumption_Schema.json" />
+    <None Include="Vehicle_Register_Schema.json" />
+  </ItemGroup>
+
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.App" />
