@@ -28,3 +28,35 @@ C:\Users\Sreejith Nair\Google Drive\UC\Course\XML & Web Services\Project\Neighbo
 C:\Users\Sreejith Nair\Google Drive\UC\Course\XML & Web Services\Project\NeighbourhoodRank\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.dll
 C:\Users\Sreejith Nair\Google Drive\UC\Course\XML & Web Services\Project\NeighbourhoodRank\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.pdb
 C:\Users\Sreejith Nair\Google Drive\UC\Course\XML & Web Services\Project\NeighbourhoodRank\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.csproj.CopyComplete
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.csprojAssemblyReference.cache
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.RazorAssemblyInfo.cache
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.RazorAssemblyInfo.cs
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.AssemblyInfoInputs.cache
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.AssemblyInfo.cs
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.dll
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.pdb
+C:\Users\shank\source\repos\NeighbourhoodRank\bin\Debug\netcoreapp2.2\appsettings.Development.json
+C:\Users\shank\source\repos\NeighbourhoodRank\bin\Debug\netcoreapp2.2\appsettings.json
+C:\Users\shank\source\repos\NeighbourhoodRank\bin\Debug\netcoreapp2.2\Properties\launchSettings.json
+C:\Users\shank\source\repos\NeighbourhoodRank\bin\Debug\netcoreapp2.2\NeighbourhoodRank.deps.json
+C:\Users\shank\source\repos\NeighbourhoodRank\bin\Debug\netcoreapp2.2\NeighbourhoodRank.runtimeconfig.json
+C:\Users\shank\source\repos\NeighbourhoodRank\bin\Debug\netcoreapp2.2\NeighbourhoodRank.runtimeconfig.dev.json
+C:\Users\shank\source\repos\NeighbourhoodRank\bin\Debug\netcoreapp2.2\NeighbourhoodRank.dll
+C:\Users\shank\source\repos\NeighbourhoodRank\bin\Debug\netcoreapp2.2\NeighbourhoodRank.pdb
+C:\Users\shank\source\repos\NeighbourhoodRank\bin\Debug\netcoreapp2.2\NeighbourhoodRank.Views.dll
+C:\Users\shank\source\repos\NeighbourhoodRank\bin\Debug\netcoreapp2.2\NeighbourhoodRank.Views.pdb
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.TagHelpers.input.cache
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.TagHelpers.output.cache
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.RazorCoreGenerate.cache
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\Error.cshtml.g.cs
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\Index.cshtml.g.cs
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\Privacy.cshtml.g.cs
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_CookieConsentPartial.cshtml.g.cs
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout.cshtml.g.cs
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_ValidationScriptsPartial.cshtml.g.cs
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.cshtml.g.cs
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.cshtml.g.cs
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.RazorTargetAssemblyInfo.cache
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.RazorTargetAssemblyInfo.cs
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.Views.pdb
+C:\Users\shank\source\repos\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.csproj.CopyComplete

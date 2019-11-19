@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sreejith Nair\\Google Drive\\UC\\Course\\XML & Web Services\\Project\\NeighbourhoodRank\\NeighbourhoodRank\\NeighbourhoodRank.csproj": {}
+    "C:\\Users\\shank\\source\\repos\\NeighbourhoodRank\\NeighbourhoodRank.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sreejith Nair\\Google Drive\\UC\\Course\\XML & Web Services\\Project\\NeighbourhoodRank\\NeighbourhoodRank\\NeighbourhoodRank.csproj": {
+    "C:\\Users\\shank\\source\\repos\\NeighbourhoodRank\\NeighbourhoodRank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sreejith Nair\\Google Drive\\UC\\Course\\XML & Web Services\\Project\\NeighbourhoodRank\\NeighbourhoodRank\\NeighbourhoodRank.csproj",
+        "projectUniqueName": "C:\\Users\\shank\\source\\repos\\NeighbourhoodRank\\NeighbourhoodRank.csproj",
         "projectName": "NeighbourhoodRank",
-        "projectPath": "C:\\Users\\Sreejith Nair\\Google Drive\\UC\\Course\\XML & Web Services\\Project\\NeighbourhoodRank\\NeighbourhoodRank\\NeighbourhoodRank.csproj",
-        "packagesPath": "C:\\Users\\Sreejith Nair\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sreejith Nair\\Google Drive\\UC\\Course\\XML & Web Services\\Project\\NeighbourhoodRank\\NeighbourhoodRank\\obj\\",
+        "projectPath": "C:\\Users\\shank\\source\\repos\\NeighbourhoodRank\\NeighbourhoodRank.csproj",
+        "packagesPath": "C:\\Users\\shank\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\shank\\source\\repos\\NeighbourhoodRank\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Sreejith Nair\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\shank\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,10 +68,16 @@
             }
           },
           "imports": [
-            "net461"
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
           ],
           "assetTargetFallback": true,
-          "warn": true
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }
