@@ -17,30 +17,24 @@ namespace NeighbourhoodRank.Pages
     {
         public string GetData(string endpoint)
         {
-            string downloadedData = "";
             using (WebClient webClient = new WebClient())
             {
-                downloadedData = webClient.DownloadString(endpoint);
+                return webClient.DownloadString(endpoint);
             }
-            return downloadedData;
         }
 
         public void OnGet()
         {
-            using (var WebClient = new WebClient())
-            {
                 
-                string jsonstring = GetData("https://data.cityofchicago.org/resource/xq83-jr8c.json");
- //               string jsonstring = WebClient.DownloadString("https://data.cityofchicago.org/resource/xq83-jr8c.json");
-                QuickType.Energy[] energies = QuickType.Energy.FromJson(jsonstring);
+                string jsonString = GetData("https://data.cityofchicago.org/resource/xq83-jr8c.json");
+                QuickType.Energy[] energies = QuickType.Energy.FromJson(jsonString);
 
-                jsonstring = GetData("https://data.cityofchicago.org/resource/tfm3-3j95.json");
-//                jsonstring = WebClient.DownloadString("https://data.cityofchicago.org/resource/tfm3-3j95.json");
-                QuickTypeVehicle.Vehicle[] vehicles = QuickTypeVehicle.Vehicle.FromJson(jsonstring);
+                jsonString = GetData("https://data.cityofchicago.org/resource/tfm3-3j95.json");
+                QuickTypeVehicle.Vehicle[] vehicles = QuickTypeVehicle.Vehicle.FromJson(jsonString);
 
                 List<Affluence> affluence = new List<Affluence>();
 
-                var energy_query = from energy in energies
+                var energyQuery = from energy in energies
                                   group energy by new { energy.ZipCode, energy.Latitude, energy.Longitude } into g
                                   select new
                                   {
@@ -54,7 +48,7 @@ namespace NeighbourhoodRank.Pages
 
                                   };
 
-                var vehicle_query = from vehicle in vehicles
+                var vehicleQuery = from vehicle in vehicles
                                     group vehicle by new { vehicle.ZipCode} into k
                                     select new
                                     {
@@ -62,8 +56,8 @@ namespace NeighbourhoodRank.Pages
                                         vehicleCount = k.Count()
                             };
 
-                var final_query = from energy in energy_query
-                                  join vehicle in vehicle_query
+                var finalQuery = from energy in energyQuery
+                                  join vehicle in vehicleQuery
                                   on energy.Zip equals vehicle.Zip
                                   select new
                                   {
@@ -76,7 +70,7 @@ namespace NeighbourhoodRank.Pages
 
                 List<Affluence> target = new List<Affluence>();
 
-                foreach (var item in final_query)
+                foreach (var item in finalQuery)
                 {
 
 
@@ -90,7 +84,6 @@ namespace NeighbourhoodRank.Pages
                     });
                 }
                 ViewData["affluence"] = affluence;
-            }
 
 
         }
