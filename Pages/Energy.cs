@@ -2,23 +2,21 @@
 {
     using System;
     using System.Collections.Generic;
-    using System.Linq;
     using System.Threading.Tasks;
-
     using System.Globalization;
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
-
+  
     public partial class Energy
     {
-        [JsonProperty("data_year")]
+        [JsonProperty("dataYear")]
         public string DataYear { get; set; }
 
         [JsonProperty("id")]
 
         public Int32 Id { get; set; }
 
-        [JsonProperty("property_name")]
+        [JsonProperty("propertyName")]
         public string PropertyName { get; set; }
 
         [JsonProperty("address")]
