@@ -28,3 +28,33 @@ C:\Users\Sreejith Nair\Google Drive\UC\Course\XML & Web Services\Project\Neighbo
 C:\Users\Sreejith Nair\Google Drive\UC\Course\XML & Web Services\Project\NeighbourhoodRank\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.dll
 C:\Users\Sreejith Nair\Google Drive\UC\Course\XML & Web Services\Project\NeighbourhoodRank\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.pdb
 C:\Users\Sreejith Nair\Google Drive\UC\Course\XML & Web Services\Project\NeighbourhoodRank\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.csproj.CopyComplete
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\bin\Debug\netcoreapp2.2\NeighbourhoodRank.deps.json
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\bin\Debug\netcoreapp2.2\NeighbourhoodRank.runtimeconfig.json
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\bin\Debug\netcoreapp2.2\NeighbourhoodRank.runtimeconfig.dev.json
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\bin\Debug\netcoreapp2.2\NeighbourhoodRank.dll
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\bin\Debug\netcoreapp2.2\NeighbourhoodRank.pdb
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\bin\Debug\netcoreapp2.2\NeighbourhoodRank.Views.dll
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\bin\Debug\netcoreapp2.2\NeighbourhoodRank.Views.pdb
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.csprojAssemblyReference.cache
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.csproj.CoreCompileInputs.cache
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.RazorAssemblyInfo.cache
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.RazorAssemblyInfo.cs
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.AssemblyInfoInputs.cache
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.AssemblyInfo.cs
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.TagHelpers.input.cache
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.TagHelpers.output.cache
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.RazorCoreGenerate.cache
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\Razor\Pages\Error.g.cshtml.cs
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\Razor\Pages\Index.g.cshtml.cs
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\Razor\Pages\Privacy.g.cshtml.cs
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_CookieConsentPartial.g.cshtml.cs
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_Layout.g.cshtml.cs
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\Razor\Pages\Shared\_ValidationScriptsPartial.g.cshtml.cs
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewImports.g.cshtml.cs
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\Razor\Pages\_ViewStart.g.cshtml.cs
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.RazorTargetAssemblyInfo.cache
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.RazorTargetAssemblyInfo.cs
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.Views.pdb
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.dll
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.pdb
+C:\Users\Beyza\Downloads\GitHubCodereview\New folder\obj\Debug\netcoreapp2.2\NeighbourhoodRank.csproj.CopyComplete
