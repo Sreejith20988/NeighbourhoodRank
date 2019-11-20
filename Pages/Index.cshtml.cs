@@ -39,15 +39,14 @@ namespace NeighbourhoodRank.Pages
                 QuickTypeVehicle.Vehicle[] vehicles = QuickTypeVehicle.Vehicle.FromJson(jsonstring);
 
                 List<Affluence> affluence = new List<Affluence>();
-
                 var energy_query = from energy in energies
-                                  group energy by new { energy.ZipCode, energy.Latitude, energy.Longitude } into g
+                                  group energy by new { energy.ZipCode, energy.Latitude, energy.Longitude } into geography
                                   select new
                                   {
-                                      Zip = g.Key.ZipCode,
-                                      Latitude = Math.Round(g.Key.Latitude, 0),
-                                      Longitude = Math.Round(g.Key.Longitude, 0),
-                                      PowerUsage = Math.Round(g.Sum(u => u.ElectricityUseKbtu) / g.Sum(u => u.GrossFloorAreaBuildingsSqFt), 0)
+                                      Zip = geography.Key.ZipCode,
+                                      Latitude = Math.Round(geography.Key.Latitude, 0),
+                                      Longitude = Math.Round(geograpgy.Key.Longitude, 0),
+                                      PowerUsage = Math.Round(geography.Sum(u => u.ElectricityUseKbtu) / geography.Sum(u => u.GrossFloorAreaBuildingsSqFt), 0)
 
                                       ////FloorSize = energy.GrossFloorAreaBuildingsSqFt,
                                       //TotalUsage = g.Sum(u=> u.ElectricityUseKbtu),
