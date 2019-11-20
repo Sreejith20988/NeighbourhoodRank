@@ -1,4 +1,4 @@
-﻿namespace QuickType
+﻿namespace Energyspace
 {
     using System;
     using System.Collections.Generic;
@@ -93,12 +93,12 @@
 
     public partial class Energy
     {
-        public static Energy[] FromJson(string json) => JsonConvert.DeserializeObject<Energy[]>(json, QuickType.Converter.Settings);
+        public static Energy[] FromJson(string json) => JsonConvert.DeserializeObject<Energy[]>(json, Energyspace.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this Energy[] self) => JsonConvert.SerializeObject(self, QuickType.Converter.Settings);
+        public static string ToJson(this Energy[] self) => JsonConvert.SerializeObject(self, Energyspace.Converter.Settings);
     }
 
     internal static class Converter
