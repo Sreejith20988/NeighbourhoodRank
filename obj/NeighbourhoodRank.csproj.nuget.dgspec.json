@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sreejith Nair\\Google Drive\\UC\\Course\\XML & Web Services\\Project\\NeighbourhoodRank\\NeighbourhoodRank\\NeighbourhoodRank.csproj": {}
+    "C:\\Users\\Aishwarya\\Documents\\GitHub\\NeighbourhoodRank\\NeighbourhoodRank.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sreejith Nair\\Google Drive\\UC\\Course\\XML & Web Services\\Project\\NeighbourhoodRank\\NeighbourhoodRank\\NeighbourhoodRank.csproj": {
+    "C:\\Users\\Aishwarya\\Documents\\GitHub\\NeighbourhoodRank\\NeighbourhoodRank.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sreejith Nair\\Google Drive\\UC\\Course\\XML & Web Services\\Project\\NeighbourhoodRank\\NeighbourhoodRank\\NeighbourhoodRank.csproj",
+        "projectUniqueName": "C:\\Users\\Aishwarya\\Documents\\GitHub\\NeighbourhoodRank\\NeighbourhoodRank.csproj",
         "projectName": "NeighbourhoodRank",
-        "projectPath": "C:\\Users\\Sreejith Nair\\Google Drive\\UC\\Course\\XML & Web Services\\Project\\NeighbourhoodRank\\NeighbourhoodRank\\NeighbourhoodRank.csproj",
-        "packagesPath": "C:\\Users\\Sreejith Nair\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sreejith Nair\\Google Drive\\UC\\Course\\XML & Web Services\\Project\\NeighbourhoodRank\\NeighbourhoodRank\\obj\\",
+        "projectPath": "C:\\Users\\Aishwarya\\Documents\\GitHub\\NeighbourhoodRank\\NeighbourhoodRank.csproj",
+        "packagesPath": "C:\\Users\\Aishwarya\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Aishwarya\\Documents\\GitHub\\NeighbourhoodRank\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Sreejith Nair\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Aishwarya\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
