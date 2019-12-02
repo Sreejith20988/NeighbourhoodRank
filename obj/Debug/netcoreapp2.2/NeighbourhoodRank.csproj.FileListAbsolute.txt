@@ -59,3 +59,4 @@ C:\Users\khann\Desktop\COLLEGE\XML\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Nei
 C:\Users\khann\Desktop\COLLEGE\XML\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.pdb
 C:\Users\khann\Desktop\COLLEGE\XML\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.csproj.CopyComplete
 C:\Users\khann\Desktop\COLLEGE\XML\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\JSONStream.g.cshtml.cs
+C:\Users\khann\Desktop\COLLEGE\XML\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\CafesChicago.g.cshtml.cs

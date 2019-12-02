@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using System.Net;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using QuickType;
+using EnergySpace;
 using QuickTypeVehicle;
 using Newtonsoft.Json.Linq;
 using Newtonsoft.Json.Schema;
@@ -33,7 +33,7 @@ namespace NeighbourhoodRank.Pages
 
                 string jsonstring = GetData("https://data.cityofchicago.org/resource/xq83-jr8c.json");
                 //               string jsonstring = WebClient.DownloadString("https://data.cityofchicago.org/resource/xq83-jr8c.json");
-                QuickType.Energy[] energies = QuickType.Energy.FromJson(jsonstring);
+                EnergySpace.Energy[] energies = EnergySpace.Energy.FromJson(jsonstring);
 
                 jsonstring = GetData("https://data.cityofchicago.org/resource/tfm3-3j95.json");
                 //                jsonstring = WebClient.DownloadString("https://data.cityofchicago.org/resource/tfm3-3j95.json");

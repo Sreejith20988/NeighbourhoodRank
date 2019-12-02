@@ -61,12 +61,12 @@
 
     public partial class Vehicle
     {
-        public static Vehicle[] FromJson(string json) => JsonConvert.DeserializeObject<Vehicle[]>(json, QuickType.Converter.Settings);
+        public static Vehicle[] FromJson(string json) => JsonConvert.DeserializeObject<Vehicle[]>(json, QuickTypeVehicle.Converter.Settings);
     }
 
     public static class Serialize
     {
-        public static string ToJson(this Vehicle[] self) => JsonConvert.SerializeObject(self, QuickType.Converter.Settings);
+        public static string ToJson(this Vehicle[] self) => JsonConvert.SerializeObject(self, QuickTypeVehicle.Converter.Settings);
     }
 
     internal static class Converter
