@@ -1,0 +1,46 @@
+﻿@page
+@model IndexModel
+@{
+IOrderedEnumerable<Affluence>  affluences = (IOrderedEnumerable<Affluence>)ViewData["affluence"];
+
+}
+<!DOCTYPE html>
+<html lang="en">
+
+
+<body>
+    <div class="text-center">
+        <h1 class="display-4">Chicogo Neighbourhood data based on Affluence</h1>
+        <img src="https://images5.alphacoders.com/412/412030.jpg" alt="Chicago" height="580" width="1099">
+
+        <table class="table">
+            <tr>
+                <th>Rank</th>
+                <th>Zip Code</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Power Usage</th>
+                <th>Vehicle Count</th>
+            </tr>
+
+
+            @foreach (NeighbourhoodRank.Affluence affluence in affluences)
+            {
+                <tr>
+                    <td>@affluence.Rank</td>
+                    <td>@affluence.Zip</td>
+                    <td>@affluence.Latitude</td>
+                    <td>@affluence.Longitude</td>
+                    <td>@affluence.PowerUsage</td>
+                    <td>@affluence.VehicleCount</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
+
+
+
+
+
