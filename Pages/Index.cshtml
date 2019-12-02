@@ -4,26 +4,34 @@
 
     List<NeighbourhoodRank.Affluence> affluences = (List<NeighbourhoodRank.Affluence>)ViewData["affluence"];
 }
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <table class="table">
-        <tr>
-            <th>Zip Code</th>
-            <th>Latitude</th>
-            <th>Longitude</th>
-            <th>Power Usage</th>
-            <th>Vehicle Count</th>
-        </tr>
+<!DOCTYPE html>
+<html lang="en">
 
-        @foreach (NeighbourhoodRank.Affluence affluence in affluences)
-        {
+
+<body>
+    <img src="https://images5.alphacoders.com/412/412030.jpg" alt="Chicago" height="580" width="1099">
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <table class="table table-bordered table-striped">
             <tr>
-                <td>@affluence.Zip</td>
-                <td>@affluence.Latitude</td>
-                <td>@affluence.Longitude</td>
-                <td>@affluence.PowerUsage</td>
-                <td>@affluence.VehicleCount</td>
+                <th>Zip Code</th>
+                <th>Latitude</th>
+                <th>Longitude</th>
+                <th>Power Usage</th>
+                <th>Vehicle Count</th>
             </tr>
-        }
-    </table>
-</div>
+
+            @foreach (NeighbourhoodRank.Affluence affluence in affluences)
+            {
+                <tr>
+                    <td>@affluence.Zip</td>
+                    <td>@affluence.Latitude</td>
+                    <td>@affluence.Longitude</td>
+                    <td>@affluence.PowerUsage</td>
+                    <td>@affluence.VehicleCount</td>
+                </tr>
+            }
+        </table>
+    </div>
+</body>
+</html>
