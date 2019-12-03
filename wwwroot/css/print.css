@@ -1,0 +1,11 @@
+﻿body {
+    background-color: floralwhite;
+}
+
+.topnav {
+    display: inline;
+}
+
+.content {
+    position: relative;
+}

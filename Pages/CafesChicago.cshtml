@@ -1,0 +1,41 @@
+﻿@page
+@model NeighbourhoodRank.Pages.CafesChicagoModel
+@{
+    List<CafeSpace.Cafe> allCafe = (List<CafeSpace.Cafe>)ViewData["cafes"];
+}
+
+
+
+
+<div align="center">
+    <h1>Cafe Business in Chicago</h1>
+</div>
+
+
+
+
+<div class="text-center">
+
+    <table class="table table-bordered table-striped">
+        <tr>
+            <th>Cafe Name</th>
+            <th>Business Owner Name</th>
+            <th>Owner Last Name</th>
+            <th>Business Owner Title</th>
+            <th>Business Account Number</th>
+        </tr>
+
+
+
+        @foreach (CafeSpace.Cafe cafe in allCafe)
+        {
+            <tr>
+                <td>@cafe.DoingBusinessAsName</td>
+                <td>@cafe.OwnerFirstName</td>
+                <td>@cafe.OwnerLastName</td>
+                <td>@cafe.OwnerTitle</td>
+                <td>@cafe.AccountNumber</td>
+            </tr>
+        }
+    </table>
+</div>

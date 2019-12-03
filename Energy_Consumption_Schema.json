@@ -1,160 +1,159 @@
 {
-    "$schema": "http://json-schema.org/draft-06/schema#",
-    "type": "array",
-    "items": {
-        "$ref": "#/definitions/WelcomeElement"
-    },
-    "definitions": {
-        "WelcomeElement": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "data_year": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                "id": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                "property_name": {
-                    "type": "string"
-                },
-                "address": {
-                    "type": "string"
-                },
-                "zip_code": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                "community_area": {
-                    "type": "string"
-                },
-                "primary_property_type": {
-                    "type": "string"
-                },
-                "gross_floor_area_buildings_sq_ft": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                "year_built": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                "of_buildings": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                "electricity_use_kbtu": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                "natural_gas_use_kbtu": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                "site_eui_kbtu_sq_ft": {
-                    "type": "string"
-                },
-                "source_eui_kbtu_sq_ft": {
-                    "type": "string"
-                },
-                "weather_normalized_site_eui_kbtu_sq_ft": {
-                    "type": "string"
-                },
-                "weather_normalized_source_eui_kbtu_sq_ft": {
-                    "type": "string"
-                },
-                "total_ghg_emissions_metric_tons_co2e": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                "ghg_intensity_kg_co2e_sq_ft": {
-                    "type": "string"
-                },
-                "latitude": {
-                    "type": "string"
-                },
-                "longitude": {
-                    "type": "string"
-                },
-                "location": {
-                    "$ref": "#/definitions/Location"
-                },
-                ":@computed_region_awaf_s7ux": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                ":@computed_region_43wa_7qmu": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                ":@computed_region_vrxf_vc4k": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                ":@computed_region_6mkv_f3dw": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                ":@computed_region_bdys_3d7i": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                "energy_star_score": {
-                    "type": "string",
-                    "format": "integer"
-                },
-                "district_steam_use_kbtu": {
-                    "type": "string",
-                    "format": "integer"
-                }
-            },
-            "required": [
-                ":@computed_region_43wa_7qmu",
-                ":@computed_region_6mkv_f3dw",
-                ":@computed_region_awaf_s7ux",
-                ":@computed_region_bdys_3d7i",
-                ":@computed_region_vrxf_vc4k",
-                "address",
-                "community_area",
-                "data_year",
-                "electricity_use_kbtu",
-                "ghg_intensity_kg_co2e_sq_ft",
-                "gross_floor_area_buildings_sq_ft",
-                "id",
-                "latitude",
-                "location",
-                "longitude",
-                "of_buildings",
-                "primary_property_type",
-                "property_name",
-                "site_eui_kbtu_sq_ft",
-                "source_eui_kbtu_sq_ft",
-                "total_ghg_emissions_metric_tons_co2e",
-                "weather_normalized_site_eui_kbtu_sq_ft",
-                "weather_normalized_source_eui_kbtu_sq_ft",
-                "year_built",
-                "zip_code"
-            ],
-            "title": "WelcomeElement"
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/WelcomeElement"
+  },
+  "definitions": {
+    "WelcomeElement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "data_year": {
+          "type": "string",
+          "format": "integer"
         },
-        "Location": {
-            "type": "object",
-            "additionalProperties": false,
-            "properties": {
-                "latitude": {
-                    "type": "string"
-                },
-                "longitude": {
-                    "type": "string"
-                }
-            },
-            "required": [
-                "latitude",
-                "longitude"
-            ],
-            "title": "Location"
+        "id": {
+          "type": "string",
+          "format": "integer"
+        },
+        "property_name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "zip_code": {
+          "type": "string"
+        },
+        "community_area": {
+          "type": "string"
+        },
+        "primary_property_type": {
+          "type": "string"
+        },
+        "gross_floor_area_buildings_sq_ft": {
+          "type": "string",
+          "format": "integer"
+        },
+        "year_built": {
+          "type": "string",
+          "format": "integer"
+        },
+        "of_buildings": {
+          "type": "string",
+          "format": "integer"
+        },
+        "electricity_use_kbtu": {
+          "type": "string",
+          "format": "integer"
+        },
+        "natural_gas_use_kbtu": {
+          "type": "string",
+          "format": "integer"
+        },
+        "site_eui_kbtu_sq_ft": {
+          "type": "string"
+        },
+        "source_eui_kbtu_sq_ft": {
+          "type": "string"
+        },
+        "weather_normalized_site_eui_kbtu_sq_ft": {
+          "type": "string"
+        },
+        "weather_normalized_source_eui_kbtu_sq_ft": {
+          "type": "string"
+        },
+        "total_ghg_emissions_metric_tons_co2e": {
+          "type": "string"
+        },
+        "ghg_intensity_kg_co2e_sq_ft": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        },
+        "location": {
+          "$ref": "#/definitions/Location"
+        },
+        ":@computed_region_awaf_s7ux": {
+          "type": "string",
+          "format": "integer"
+        },
+        ":@computed_region_43wa_7qmu": {
+          "type": "string",
+          "format": "integer"
+        },
+        ":@computed_region_vrxf_vc4k": {
+          "type": "string",
+          "format": "integer"
+        },
+        ":@computed_region_6mkv_f3dw": {
+          "type": "string",
+          "format": "integer"
+        },
+        ":@computed_region_bdys_3d7i": {
+          "type": "string",
+          "format": "integer"
+        },
+        "energy_star_score": {
+          "type": "string",
+          "format": "integer"
+        },
+        "district_steam_use_kbtu": {
+          "type": "string",
+          "format": "integer"
+        },
+        "district_chilled_water_use_kbtu": {
+          "type": "string",
+          "format": "integer"
+        },
+        "all_other_fuel_use_kbtu": {
+          "type": "string",
+          "format": "integer"
         }
+      },
+      "required": [
+        ":@computed_region_43wa_7qmu",
+        ":@computed_region_6mkv_f3dw",
+        ":@computed_region_awaf_s7ux",
+        ":@computed_region_bdys_3d7i",
+        ":@computed_region_vrxf_vc4k",
+        "address",
+        "community_area",
+        "data_year",
+        "gross_floor_area_buildings_sq_ft",
+        "id",
+        "latitude",
+        "location",
+        "longitude",
+        "of_buildings",
+        "primary_property_type",
+        "property_name",
+        "year_built",
+        "zip_code"
+      ],
+      "title": "WelcomeElement"
+    },
+    "Location": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "latitude": {
+          "type": "string"
+        },
+        "longitude": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "latitude",
+        "longitude"
+      ],
+      "title": "Location"
     }
+  }
 }

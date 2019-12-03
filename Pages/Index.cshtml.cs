@@ -60,7 +60,7 @@ namespace NeighbourhoodRank.Pages
 
             IOrderedEnumerable<Affluence> rankedAffluence = affluence.AffluenceRank();
 
-            List <Affluence> affluences = rankedAffluence.ToList();
+            List<Affluence> affluences = rankedAffluence.ToList();
 
             SearchResults = affluences.Find(x => x.Zip == Search);
 

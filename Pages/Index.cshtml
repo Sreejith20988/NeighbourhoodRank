@@ -2,68 +2,68 @@
 @model IndexModel
 @{
 
-    IOrderedEnumerable<Affluence>  affluences = (IOrderedEnumerable<Affluence>)ViewData["affluence"];
+    IOrderedEnumerable<Affluence> affluences = (IOrderedEnumerable<Affluence>)ViewData["affluence"];
 }
-    <div class="text-center">
-        <h1 class="display-4">Chicogo Neighbourhood data based on Affluence</h1>
-        <img src="https://images5.alphacoders.com/412/412030.jpg" alt="Chicago" height="580" width="1099">
+<div class="text-center">
+    <h1 class="display-4">Chicago Neighbourhood data based on Affluence</h1>
 
 
-        <form action="" method="POST" style="margin-top: 50px;">
-            <div class="form-group">
-                <label class="control-label" for="search">Please enter zipcode for neighbourhood you are interested in</label>
-                <input type="text" class="form-control" name="search" id="search" />
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Search Neighbourhood" class="btn btn-default" />
-            </div>
-        </form>
+    <form action="" method="POST" style="margin-top: 50px;">
+        <div class="form-group">
+            <label class="control-label" for="search">Please enter zipcode for neighbourhood you are interested in</label>
+            <input type="text" class="form-control" name="search" id="search" />
+        </div>
+        <div class="form-group">
+            <input type="submit" value="Search Neighbourhood" class="btn btn-outline-dark" />
+        </div>
+    </form>
 
 
-        @if (Model.SearchCompleted)
-        {
-            <table class="table">
-                <thead>
+    @if (Model.SearchCompleted)
+    {
+        <table class="table table-bordered table-striped">
+            <thead>
+                <tr>
+                    <th>Rank</th>
+                    <th>Zip Code</th>
+                    <th>Latitude</th>
+                    <th>Longitude</th>
+                    <th>Power Usage</th>
+                    <th>Vehicle Count</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model.SearchResults.ACount > 0)
+                {
                     <tr>
-                        <th>Rank</th>
-                        <th>Zip Code</th>
-                        <th>Latitude</th>
-                        <th>Longitude</th>
-                        <th>Power Usage</th>
-                        <th>Vehicle Count</th>
+                        <td>@Model.SearchResults.Rank</td>
+                        <td>@Model.SearchResults.Zip</td>
+                        <td>@Model.SearchResults.Latitude</td>
+                        <td>@Model.SearchResults.Longitude</td>
+                        <td>@Model.SearchResults.PowerUsage</td>
+                        <td>@Model.SearchResults.VehicleCount</td>
                     </tr>
-                </thead>
-                <tbody>
-                    @if (Model.SearchResults.ACount > 0)
-                    {
-                        <tr>
-                            <td>@Model.SearchResults.Rank</td>
-                            <td>@Model.SearchResults.Zip</td>
-                            <td>@Model.SearchResults.Latitude</td>
-                            <td>@Model.SearchResults.Longitude</td>
-                            <td>@Model.SearchResults.PowerUsage</td>
-                            <td>@Model.SearchResults.VehicleCount</td>
-                        </tr>
-                    }
-                    else
-                    {
-                        <tr class="danger">
-                            <td colspan="4" class="text-center">
-                                No results found for term "@Model.Search"
-                            </td>
-                        </tr>
-                    }
-                </tbody>
-            </table>
-        }
-        else
-        {
-            <div class="alert alert-info">
-                <p>
-                    Enter the search terms into the box and click <strong>Search Neighbourhood</strong>
-                </p>
-            </div>
-        }
+                }
+                else
+                {
+                    <tr class="danger">
+                        <td colspan="4" class="text-center">
+                            No results found for term "@Model.Search"
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <div class="alert alert-info">
+            <p>
+                Enter the search terms into the box and click <strong>Search Neighbourhood</strong>
+            </p>
+        </div>
+    }
 
+    <img src="https://images5.alphacoders.com/412/412030.jpg" alt="Chicago" height="580" width="1099">
 
-    </div>
+</div>

@@ -59,3 +59,5 @@ C:\Users\Nikita\Documents\GitHub\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Neigh
 C:\Users\Nikita\Documents\GitHub\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.pdb
 C:\Users\Nikita\Documents\GitHub\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.csproj.CopyComplete
 C:\Users\Nikita\Documents\GitHub\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\AllNeighbourhood.g.cshtml.cs
+C:\Users\Nikita\Documents\GitHub\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\JSONStream.g.cshtml.cs
+C:\Users\Nikita\Documents\GitHub\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\CafesChicago.g.cshtml.cs

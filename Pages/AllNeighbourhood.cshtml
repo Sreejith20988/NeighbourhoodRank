@@ -1,7 +1,7 @@
 ﻿@page
 @model IndexModel
 @{
-IOrderedEnumerable<Affluence>  affluences = (IOrderedEnumerable<Affluence>)ViewData["affluence"];
+    IOrderedEnumerable<Affluence> affluences = (IOrderedEnumerable<Affluence>)ViewData["affluence"];
 
 }
 <!DOCTYPE html>
@@ -10,10 +10,10 @@ IOrderedEnumerable<Affluence>  affluences = (IOrderedEnumerable<Affluence>)ViewD
 
 <body>
     <div class="text-center">
-        <h1 class="display-4">Chicogo Neighbourhood data based on Affluence</h1>
+        <h1 class="display-4">Chicago Neighbourhood data based on Affluence</h1>
         <img src="https://images5.alphacoders.com/412/412030.jpg" alt="Chicago" height="580" width="1099">
 
-        <table class="table">
+        <table class="table table-bordered table-striped">
             <tr>
                 <th>Rank</th>
                 <th>Zip Code</th>
