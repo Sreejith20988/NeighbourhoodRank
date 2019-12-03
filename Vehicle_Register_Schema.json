@@ -1,0 +1,183 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "type": "array",
+  "items": {
+    "$ref": "#/definitions/Element"
+  },
+  "definitions": {
+    "Element": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "vehicle_type": {
+          "$ref": "#/definitions/VehicleType"
+        },
+        "public_vehicle_number": {
+          "type": "string",
+          "format": "integer"
+        },
+        "status": {
+          "$ref": "#/definitions/Status"
+        },
+        "vehicle_fuel_source": {
+          "$ref": "#/definitions/VehicleFuelSource"
+        },
+        "wheelchair_accessible": {
+          "$ref": "#/definitions/WheelchairAccessible"
+        },
+        "company_name": {
+          "type": "string"
+        },
+        "address": {
+          "type": "string"
+        },
+        "city": {
+          "$ref": "#/definitions/City"
+        },
+        "state": {
+          "$ref": "#/definitions/State"
+        },
+        "zip_code": {
+          "type": "string",
+          "format": "integer"
+        },
+        "record_id": {
+          "type": "string"
+        },
+        "vehicle_make": {
+          "type": "string"
+        },
+        "vehicle_model": {
+          "type": "string"
+        },
+        "vehicle_model_year": {
+          "type": "string",
+          "format": "integer"
+        },
+        "vehicle_color": {
+          "type": "string"
+        },
+        "taxi_affiliation": {
+          "type": "string"
+        },
+        "taxi_medallion_license_management": {
+          "$ref": "#/definitions/TaxiMedallionLicenseManagement"
+        }
+      },
+      "required": [
+        "address",
+        "city",
+        "company_name",
+        "public_vehicle_number",
+        "record_id",
+        "state",
+        "status",
+        "vehicle_fuel_source",
+        "vehicle_type",
+        "wheelchair_accessible",
+        "zip_code"
+      ],
+      "title": "Element"
+    },
+    "City": {
+      "type": "string",
+      "enum": [
+        "CHICAGO",
+        "ELMHURST",
+        "TINLEY PARK",
+        "CHIICAGO",
+        "SKOKIE",
+        "FRANKFORT",
+        "ORLAND PARK",
+        "LISLE",
+        "SCHILLER PARK",
+        "CRYSTAL LAKE",
+        "NEW LENOX",
+        "ROMEOVILLE",
+        "ELK GROVE VILLAGE",
+        "CHICAGO RIDGE"
+      ],
+      "title": "City"
+    },
+    "State": {
+      "type": "string",
+      "enum": [
+        "IL"
+      ],
+      "title": "State"
+    },
+    "Status": {
+      "type": "string",
+      "enum": [
+        "INACTIVE",
+        "ACTIVE",
+        "FORECLOSURE",
+        "VIOLATION",
+        "SURRENDER",
+        "RESERVED",
+        "REVOKED"
+      ],
+      "title": "Status"
+    },
+    "TaxiMedallionLicenseManagement": {
+      "type": "string",
+      "enum": [
+        "Chicago Elite Cab Corp.",
+        "Chicago Medallion Management, Corp.",
+        "Sun Financial Services, Inc.",
+        "Owner-Operator",
+        "Taxi Works, LLC",
+        "Star North Management LLC",
+        "Owner Manager",
+        "Top Cab Corp.",
+        "Choice Taxi Association",
+        "Masters Medallion Management, LLC",
+        "Taxi Medallion Management, LLC",
+        "Peeple Trans Cab Inc",
+        "Cab Management Group, Inc.",
+        "Medallion Leasing and Management, Inc.",
+        "Medallion Management Corp.",
+        "Patriot Trans Inc",
+        "M & A Leasing, LLC",
+        "Chicago Taxicab Management Inc.",
+        "24 Seven Taxi",
+        "540 Auto Repair Inc"
+      ],
+      "title": "TaxiMedallionLicenseManagement"
+    },
+    "VehicleFuelSource": {
+      "type": "string",
+      "enum": [
+        "Gasoline",
+        "Hybrid",
+        "Compressed Natural Gas",
+        "Pedal",
+        "Horse",
+        "Flex Fuel",
+        "Diesel"
+      ],
+      "title": "VehicleFuelSource"
+    },
+    "VehicleType": {
+      "type": "string",
+      "enum": [
+        "Taxi",
+        "Charter Sightseeing",
+        "Medicar",
+        "Livery",
+        "Pedicab",
+        "Ambulance",
+        "Horse Drawn Carriage"
+      ],
+      "title": "VehicleType"
+    },
+    "WheelchairAccessible": {
+      "type": "string",
+      "enum": [
+        "N",
+        "Y"
+      ],
+      "title": "WheelchairAccessible"
+    }
+  }
+}
