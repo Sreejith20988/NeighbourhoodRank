@@ -28,3 +28,4 @@ C:\Users\Sreejith Nair\Google Drive\UC\Course\XML & Web Services\Project\Neighbo
 C:\Users\Sreejith Nair\Google Drive\UC\Course\XML & Web Services\Project\NeighbourhoodRank\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.dll
 C:\Users\Sreejith Nair\Google Drive\UC\Course\XML & Web Services\Project\NeighbourhoodRank\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.pdb
 C:\Users\Sreejith Nair\Google Drive\UC\Course\XML & Web Services\Project\NeighbourhoodRank\NeighbourhoodRank\obj\Debug\netcoreapp2.2\NeighbourhoodRank.csproj.CopyComplete
+C:\Users\Sreejith Nair\Google Drive\UC\Course\XML & Web Services\Project\NeighbourhoodRank\NeighbourhoodRank\obj\Debug\netcoreapp2.2\Razor\Pages\CafeRecords.g.cshtml.cs

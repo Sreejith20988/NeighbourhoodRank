@@ -1,0 +1,17 @@
+﻿@page
+@model NeighbourhoodRank.Pages.CafeRecordsModel
+@{
+    List<NeighbourhoodRank.Cafe> cafes = (List <NeighbourhoodRank.Cafe>) ViewData["cafe"];
+}
+
+<h1>CafeRecords</h1>
+
+@foreach(NeighbourhoodRank.Cafe cafe in cafes)
+{
+    <tr>
+        <td>@cafe.AccountNumber</td>
+        <td>@cafe.DoingBusinessAsName</td>
+        <td>@cafe.OwnerTitle</td>
+    </tr>
+}
+
